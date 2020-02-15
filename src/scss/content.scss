@@ -1,0 +1,53 @@
+.content {
+@include row-flex();
+justify-self: center;
+margin-top: 50px;
+    .content__post {
+        @include col();
+        @include size(9);
+        .post__title {
+            color: #1a1a1a;
+            font-family: "Playfair Display";
+            font-size: 33px;
+            text-align: center;
+        }
+        .post__info {
+        color: #b0b0b0;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 26px 0 39px 0;
+        text-align: center;
+        }
+
+        .post__content {
+            margin-top: 40px;
+            color: #303030;
+            font-family: Montserrat;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 28px;
+        }
+        .post__footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 40px;
+            .post__footer-social {
+
+                .share-icon__item {
+                    margin-right: 25px;
+                    &:last-child {
+                    margin-right: 0;
+                    }
+                }
+
+            }
+        }
+        hr {
+             margin-top: 40px; 
+             color: rgba(150, 145, 145, 0.303);
+        }
+    }
+}

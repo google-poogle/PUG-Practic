@@ -1,0 +1,45 @@
+.footer {
+    background-color: #dde2e7;
+    .footer__items {
+        padding: 60px 0 67px 0;
+       @include row-flex();
+       justify-content: space-between;
+       align-items: center;
+       .footer__link {
+           @include col();
+           @include size(8);
+           display: flex;
+           justify-content: space-around;
+           .footer__link-item { 
+               width: 33%;
+               a {
+                color: #8e9399;
+                font-size: 16px;
+                font-weight: 500;
+                letter-spacing: 0.32px;
+                text-decoration: none;
+                margin-bottom: 10px;
+                display: block;
+               }
+           }
+       }
+       .soc {
+        @include col();
+        @include size(4);
+        .icon__items {
+            justify-content: center;
+        }
+        margin: 0 auto;
+       }
+    }
+    .footer__copyraight {
+        background-color: #e8ebee;
+        text-align: center;
+        color: #b7babe;
+        font-size: 14px;
+        font-weight: 500;
+        /* Text style for "© Copyrigh" */
+        letter-spacing: 0.28px;
+        line-height: 60px;
+    }
+}

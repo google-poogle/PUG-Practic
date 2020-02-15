@@ -1,0 +1,37 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 80px 0;
+    .pagination__recent, .pagination_older {
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 14px;   
+        font-weight: 700;           
+        text-transform: uppercase;
+        letter-spacing: 0.28px;
+    }
+
+    .pagination__number {
+        a {
+            text-decoration: none;
+            margin-right: 15px;
+            color: #000000;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.36px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        .current_a { 
+            color: red;
+        
+        } 
+    
+    }
+        
+        
+    
+    }

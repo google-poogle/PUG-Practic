@@ -1,0 +1,56 @@
+include ../mixins/mixin-group.pug
+.widget
+    .widget__title Recent posts
+    -var widget = {};
+    - widget.img = '/img/1_widget.png';
+    - widget.link = 'Austin DIY sriracha polaroid sartorial la croix. ';
+    - widget.desk = 'december 26, 2019 — 5 comments';
+    +widget__item(widget,1)
+
+    -var widget = {};
+    - widget.img = '/img/2_widget.png';
+    - widget.link = 'Vinyl hexagon tbh selvage chambray street art. ';
+    - widget.desk = 'december 12, 2019 — 0 comments';
+    +widget__item(widget,1)
+
+    -var widget = {};
+    - widget.img = '/img/4_widget.png';
+    - widget.link = 'Edison bulb raw denim 3 wolf moon shaman mustache taxidermy. Cliche disrupt slow-carb chicharrones. ';
+    - widget.desk = 'december 08, 2019 — 2 comments';
+    +widget__item(widget)
+
+    .widget__title Popular posts
+    -var widget = {};
+    - widget.img = '/img/5_widget.png';
+    - widget.link = 'Austin DIY sriracha polaroid sartorial la croix. ';
+    - widget.desk = 'december 26, 2019 — 5 comments';
+    +widget__item(widget,1)
+
+    -var widget = {};
+    - widget.img = '/img/6_widget.png';
+    - widget.link = 'Minim ad austin tousled gluten-free.';
+    - widget.desk = 'november 17, 2019 — 22 comments';
+    +widget__item(widget,0)
+
+     .widget__title Instagram
+     .widget__item
+        .widget__item.insta
+            .insta__items
+                .insta__item
+                    img(src="/img/inst-1.png", alt="")
+                .insta__item
+                    img(src="/img/inst-2.png", alt="")
+            .insta__items
+                .insta__item
+                    img(src="/img/inst-3.png", alt="")
+                .insta__item
+                    img(src="/img/inst-4.png", alt="")
+            .insta__items
+                .insta__item
+                    img(src="/img/inst-1.png", alt="")
+                .insta__item
+                    img(src="/img/inst-2.png", alt="")
+
+            
+
+

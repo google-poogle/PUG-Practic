@@ -1,0 +1,11 @@
+mixin widget__item(data,hr)
+     .widget__item
+        .widget__img 
+            img(src=data.img, alt="")
+        .widget__link #{data.link}
+        if block
+            block
+        else
+            .widget__desk #{data.desk}
+        if hr==1
+            hr

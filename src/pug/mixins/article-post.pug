@@ -1,0 +1,26 @@
+mixin post(post)
+    articles.post
+            .post__title #{post.title} 
+            .post__info #{post.desk} 
+            .post__img 
+                img(src=post.img, alt="")
+            .post__content
+                if block
+                    block
+                else
+                    p #{post.content}
+            .post__footer
+                .post__footer-read
+                    +btn_read_more('#', post.btn)
+                .post__footer-social
+                    .share-icon
+                        a(href="#").share-icon__item
+                            img(src="/img/instagram.png", alt="")
+                        a(href="#").share-icon__item
+                            img(src="/img/mini-twitter.png", alt="")
+                        a(href="#").share-icon__item
+                            img(src="/img/mini-facebook-f.png", alt="")
+                        a(href="#").share-icon__item
+                            img(src="/img/whatsapp.png", alt="")
+    <hr>
+    

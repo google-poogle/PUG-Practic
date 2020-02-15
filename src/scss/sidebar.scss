@@ -1,0 +1,54 @@
+.content__sidebar {
+    @include col();
+    @include size(3);
+}
+.widget__title {
+    color: #1a1a1a;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 29px 69px 25px 69px;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    margin-bottom: 40px;
+}
+.widget__item {
+    text-align: center;
+    .widget__img {
+        margin-bottom: 29px;
+        img {
+            object-fit: cover;
+        }
+    }
+    .widget__link {
+        color: #1a1a1a;
+        font-family: "Playfair Display";
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+    .widget__desk {    
+    color: #b0b0b0;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    }
+    hr {
+        margin-bottom: 40px;  
+    }
+
+.insta {
+    display: flex;
+    flex-direction: column;
+    .insta__items {
+        display: flex;
+       
+        .insta__item {
+            &:first-child {
+                padding-right: 30px;
+                padding-bottom: 30px;
+              
+            }
+        }
+    }
+}
+}
